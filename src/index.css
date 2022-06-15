@@ -10,11 +10,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  color: #000000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header a {
+  color: #1936a0 !important;
 }
 
 .nav-contain {
@@ -41,6 +46,7 @@ code {
   align-items: center;
   height: 400px;
   color: white;
+  font-style: normal;
 }
 
 .intro-container p {
@@ -49,12 +55,13 @@ code {
   font-size: 14px;
   line-height: 150%;
   margin: 0 auto;
-  text-align: center;
+  text-align: start;
   letter-spacing: 1.2px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .intro-1 {
@@ -62,16 +69,15 @@ code {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding-left: 30px;
 }
 
 .intro-1 button {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: white;
   border-color: white;
-  margin: 0 auto;
 }
 
 .intro-1 .white span {
@@ -91,21 +97,21 @@ code {
   letter-spacing: 1.5px;
   color: white;
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   margin-top: 50px;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 35px;
 }
 .intro-1 .yellow {
   display: block;
   letter-spacing: 1.5px;
   color: yellow;
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   margin-top: 10px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 @media (max-width: 700px) {
@@ -146,8 +152,9 @@ code {
 
 .chairman-section .chairman-content p {
   font-size: 13px;
-  font-weight: 300;
-  text-align: center;
+  font-weight: 400;
+  text-align: start;
+  letter-spacing: 1.2px;
 }
 
 .chairman-section .chairman-content h2 {
@@ -163,6 +170,9 @@ code {
     width: 40%;
   }
   .chairman-section .chairman-content {
+    margin: 0 auto;
+  }
+  .chairman-section .chairman-img {
     margin: 0 auto;
   }
 }
@@ -215,6 +225,16 @@ footer {
 footer h5 {
   font-size: 14px;
   color: #ffffff;
+}
+
+.contact p span {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contact a {
+  margin-top: 10px;
 }
 
 .flex-between {
@@ -356,6 +376,7 @@ footer h5 {
 }
 
 .address {
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -392,4 +413,24 @@ footer h5 {
 
 .form-adjust:active {
   background-color: none !important;
+}
+
+.about-content {
+  margin: 40px;
+  font-size: 13px;
+}
+
+.about-content h4 {
+  font-size: 20px;
+}
+
+.honours {
+  list-style-type: decimal !important;
+}
+
+.honours div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
 }

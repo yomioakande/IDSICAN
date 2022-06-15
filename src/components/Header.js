@@ -23,23 +23,27 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav
-                className="justify-content-end ml-auto"
                 activeKey={activeHeader}
+                className="justify-content-end ml-auto"
               >
                 <Nav.Item>
                   <Nav.Link href="/">Home</Nav.Link>
                 </Nav.Item>
-                <NavDropdown title="AboutUs" id="nav-dropdown">
-                  <NavDropdown.Item eventKey="4.1">About Us</NavDropdown.Item>
-                  <NavDropdown.Item eventKey="4.2">
-                    Another action
+                <NavDropdown title="About Us" id="nav-dropdown" href="/about">
+                  <NavDropdown.Item eventKey="4.1" href="/about">
+                    About IDSICAN
                   </NavDropdown.Item>
-                  <NavDropdown.Item eventKey="4.3">
-                    Something else here
+                  <NavDropdown.Item eventKey="4.2" href="/about">
+                    Member's Forum
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item eventKey="4.4">
-                    Separated link
+                  <NavDropdown.Item eventKey="4.2" href="/about">
+                    ICAN Website
+                  </NavDropdown.Item>
+                  <NavDropdown.Item eventKey="4.4" href="/about">
+                    Annual Report and Minute of AGM
+                  </NavDropdown.Item>
+                  <NavDropdown.Item eventKey="4.5" href="/about">
+                    E-bulletin and newsletter
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Item>
@@ -52,16 +56,11 @@ const Header = () => {
                   <Nav.Link href="/executives">Executives</Nav.Link>
                 </Nav.Item>
                 <NavDropdown title="Firms" id="nav-dropdown">
-                  <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item eventKey="4.1">
+                    Accounting Firms Directory
+                  </NavDropdown.Item>
                   <NavDropdown.Item eventKey="4.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item eventKey="4.3">
-                    Something else here
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item eventKey="4.4">
-                    Separated link
+                    Accounting Firms Registration Procedure
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Item>

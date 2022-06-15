@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ExecutiveScreen from "./screens/ExecutiveScreen";
 import PastChairmenScreen from "./screens/PastChairmenScreen";
 import ContactScreen from "./screens/ContactScreen";
+import AboutScreen from "./screens/AboutScreen";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/executives" element={<ExecutiveScreen />} />
           <Route path="/past-chairmen" element={<PastChairmenScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
+          <Route path="/about" element={<AboutScreen />} />
         </Routes>
       </Router>
       <Footer />

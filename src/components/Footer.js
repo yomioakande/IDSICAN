@@ -9,8 +9,8 @@ const Footer = () => {
           <div>
             <img
               src={logo}
-              width={150}
-              height={50}
+              width={200}
+              height={80}
               alt="Logo"
               className="logo-img"
             />
@@ -20,12 +20,18 @@ const Footer = () => {
               <div className="contact">
                 <h5>Contact</h5>
                 <p>
-                  4, Araromi Street, off Oduyemi Street, Anifowoshe Area, Ikeja,
-                  Lagos, Nigeria.
+                  4, Araromi Street,
+                  <span> off Oduyemi Street, </span>
+                  <span> Anifowoshe Area, Ikeja, </span>
+                  <span style={{ marginBottom: "10px" }}> Lagos, Nigeria.</span>
                 </p>
                 <a
                   href="mailto:info@ican-ikejadistrictsociety.org"
-                  style={{ color: "white", fontWeight: "bold", width: "70%" }}
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    width: "70%",
+                  }}
                 >
                   info@ican-ikejadistrictsociety.org
                 </a>
@@ -46,8 +52,22 @@ const Footer = () => {
             </section>
           </div>
         </div>
-        <hr style={{ color: "#ffffff", borderTop: "1px solid white" }} />
-        <p style={{ fontSize: "12px", fontWeight: "bold" }}>
+        <hr
+          style={{
+            color: "#ffffff",
+            borderTop: "1px solid white",
+            width: "70%",
+            marginRight: "0px",
+          }}
+        />
+        <p
+          style={{
+            fontSize: "12px",
+            fontWeight: "bold",
+            marginBottom: "10px",
+            paddingBottom: "20px",
+          }}
+        >
           Copyrights &copy; 2022 Ikeja & District Society of ICAN (IDSICAN). All
           Rights Reserved.
         </p>
